@@ -1,0 +1,33 @@
+.Contact {
+  .contact-body {
+    margin: auto;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    padding-top: 2em;
+  }
+
+  .contact-grid {
+    text-align: center;
+    justify-content: center;
+    width: 88%;
+    height: 550px;
+    background: white;
+    color: black;
+    margin-bottom: 20px;
+
+    hr {
+      border-top: 5px dashed black;
+      width: 50%;
+      margin: auto;
+    }
+  }
+
+  .contact-list {
+    svg {
+      font-size: 50px;
+      padding-right: 4rem;
+    }
+  }
+}
