@@ -1,22 +1,24 @@
 .Home {
   .home-grid {
-    background: #536976; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #292e49,
-      #536976
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #292e49,
-      #536976
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: url('../../../assets/images/dev-desk.png') center no-repeat;
+    background-size: cover;
     text-align: center;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    // background: #536976; /* fallback for old browsers */
+    // background: -webkit-linear-gradient(
+    //   to right,
+    //   #292e49,
+    //   #536976
+    // ); /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(
+    //   to right,
+    //   #292e49,
+    //   #536976
+    // ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
   .avatar-image {
