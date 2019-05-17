@@ -21,6 +21,7 @@ class Projects extends Component {
 
   toggleCategories() {
     if (this.state.activeTab === 0) {
+      console.log('projects');
       return (
         <div className="projects-grid">
           <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
@@ -110,12 +111,13 @@ class Projects extends Component {
             <Tab>Features</Tab>
             <Tab>Clients</Tab>
           </Tabs>
+
+          <Grid>
+            <Cell col={12}>
+              <div className="content">{this.toggleCategories()}</div>
+            </Cell>
+          </Grid>
         </div>
-        <Grid>
-          <Cell col={12}>
-            <div className="content">{this.toggleCategories()}</div>
-          </Cell>
-        </Grid>
       </div>
     );
   }
