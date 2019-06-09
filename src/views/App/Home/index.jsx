@@ -7,6 +7,7 @@ import {
   faGithub,
   faFreeCodeCamp,
 } from '@fortawesome/free-brands-svg-icons';
+import profPic from '../../../assets/images/profPic_circle.png';
 
 class Home extends Component {
   render() {
@@ -14,11 +15,7 @@ class Home extends Component {
       <div className="Home">
         <Grid className="home-grid">
           <Cell col={12}>
-            <img
-              src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
-              alt="avatar"
-              className="avatar-image"
-            />
+            <img src={profPic} alt="avatar" className="avatar-image" />
             <div className="banner-text">
               <h1>Front End Developer</h1>
               <hr />
