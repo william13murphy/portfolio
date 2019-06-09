@@ -1,6 +1,14 @@
 .Resume {
+  .resume-grid {
+    background: url('../../../assets/images/dev-desk.png') center no-repeat;
+    background-size: cover;
+  }
   .resume-content {
     display: flex;
     justify-content: center;
+
+    .react-pdf__Page {
+      padding: 3em;
+    }
   }
 }

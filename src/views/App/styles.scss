@@ -1,10 +1,10 @@
 .App {
   header {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
 
     .mdl-navigation__link {
-      color: black;
+      color: white;
       font-weight: 600;
     }
     // background: #536976; /* fallback for old browsers */
@@ -21,6 +21,6 @@
   }
 
   .material-icons {
-    color: black;
+    color: white;
   }
 }

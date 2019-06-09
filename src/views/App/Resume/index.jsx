@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Document, Page } from 'react-pdf';
-import myResume from './BillyMurphy_Resume_5-3-19.pdf';
+import myResume from './BillyMurphy_Resume_6-4-19.pdf';
 import { Tabs, Tab } from 'react-mdl';
 import './styles.scss';
 
@@ -31,7 +31,7 @@ class Resume extends Component {
           <Tab>Next</Tab>
         </Tabs>
 
-        <div style={{ width: '600' }}>
+        <div className="resume-grid" style={{ width: '600' }}>
           <Document
             className="resume-content"
             file={myResume}
