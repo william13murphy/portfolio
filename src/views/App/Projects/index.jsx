@@ -13,6 +13,9 @@ import {
   IconButton,
 } from 'react-mdl';
 import './styles.scss';
+import TAPLogo from '../../../assets/images/TAP_Color.svg';
+import EmpLogo from '../../../assets/images/employees.png';
+import AngLogo from '../../../assets/images/angular.png';
 
 class Projects extends Component {
   state = {
@@ -26,19 +29,61 @@ class Projects extends Component {
           <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
             <CardTitle
               style={{
-                color: '#fff',
-                height: '176px',
-                background:
-                  'url(https://cdn.auth0.com/blog/react-js/react.png) center / cover',
+                height: '175px',
+                background: `url(${TAPLogo}) no-repeat center/cover`,
               }}
             >
-              React Project #1
+              TAP-CRM
             </CardTitle>
-            <CardText>FIRST PROJECTS</CardText>
+            <CardText>Martial Arts school management software</CardText>
             <CardActions>
-              <Button colored>GitHub</Button>
-              <Button colored>CodePen</Button>
-              <Button colored>Live Demo</Button>
+              <Button
+                colored
+                onClick={() =>
+                  window.open(
+                    'https://github.com/william13murphy/tap-crm',
+                    '_blank'
+                  )
+                }
+              >
+                GitHub
+              </Button>
+              <Button
+                colored
+                onClick={() =>
+                  window.open('https://tapdev.kinapptech.com/login', '_blank')
+                }
+              >
+                Live Demo
+              </Button>
+            </CardActions>
+            <CardMenu style={{ color: '#fff' }}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+
+          <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+            <CardTitle
+              style={{
+                height: '175px',
+                background: `url(${EmpLogo}) no-repeat center`,
+              }}
+            >
+              Employee Tracking System
+            </CardTitle>
+            <CardText>Internal HR App to help manage employees</CardText>
+            <CardActions>
+              <Button
+                colored
+                onClick={() =>
+                  window.open(
+                    'https://github.com/william13murphy/employee-tracking-system ',
+                    '_blank'
+                  )
+                }
+              >
+                GitHub
+              </Button>
             </CardActions>
             <CardMenu style={{ color: '#fff' }}>
               <IconButton name="share" />
@@ -50,39 +95,24 @@ class Projects extends Component {
               style={{
                 color: '#fff',
                 height: '176px',
-                background:
-                  'url(https://cdn.auth0.com/blog/react-js/react.png) center / cover',
+                background: `url(${AngLogo}) no-repeat center/cover`,
               }}
             >
-              React Project #2
+              Angular Todo App
             </CardTitle>
-            <CardText>SECOND PROJECTS</CardText>
+            <CardText>Experimenting with Angular 7</CardText>
             <CardActions>
-              <Button colored>GitHub</Button>
-              <Button colored>CodePen</Button>
-              <Button colored>Live Demo</Button>
-            </CardActions>
-            <CardMenu style={{ color: '#fff' }}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-
-          <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-            <CardTitle
-              style={{
-                color: '#fff',
-                height: '176px',
-                background:
-                  'url(https://cdn.auth0.com/blog/react-js/react.png) center / cover',
-              }}
-            >
-              React Project #3
-            </CardTitle>
-            <CardText>ThIRD PROJECTS</CardText>
-            <CardActions>
-              <Button colored>GitHub</Button>
-              <Button colored>CodePen</Button>
-              <Button colored>Live Demo</Button>
+              <Button
+                colored
+                onClick={() =>
+                  window.open(
+                    'https://github.com/william13murphy/ang-todo',
+                    '_blank'
+                  )
+                }
+              >
+                GitHub
+              </Button>
             </CardActions>
             <CardMenu style={{ color: '#fff' }}>
               <IconButton name="share" />
@@ -111,11 +141,13 @@ class Projects extends Component {
             <Tab>Clients</Tab>
           </Tabs>
         </div>
-        <Grid>
-          <Cell col={12}>
-            <div className="content">{this.toggleCategories()}</div>
-          </Cell>
-        </Grid>
+        <div className="projects-container">
+          <Grid>
+            <Cell col={12}>
+              <div className="content">{this.toggleCategories()}</div>
+            </Cell>
+          </Grid>
+        </div>
       </div>
     );
   }
