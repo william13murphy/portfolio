@@ -9,8 +9,6 @@ import {
   CardText,
   CardActions,
   Button,
-  CardMenu,
-  IconButton,
 } from 'react-mdl';
 import './styles.scss';
 import TAPLogo from '../../../assets/images/TAP_Color.svg';
@@ -36,7 +34,10 @@ class Projects extends Component {
             >
               TAP-CRM
             </CardTitle>
-            <CardText>Martial Arts school management software</CardText>
+            <CardText>
+              Martial Arts CRM that helps Owners manage their school, students,
+              & revenues
+            </CardText>
             <CardActions>
               <Button
                 colored
@@ -64,25 +65,34 @@ class Projects extends Component {
             <CardTitle
               style={{
                 height: '175px',
-                background: `url(${EmpLogo}) no-repeat center`,
+                background: `url(${WeatherLogo}) no-repeat left`,
               }}
             >
-              Employee Tracking System
+              Weather App
             </CardTitle>
             <CardText>
-              Internal HR App to help manage employees status, PTO, etc.
+              Weather App built with Vue which allows users to input location of
+              choice.
             </CardText>
             <CardActions>
               <Button
                 colored
                 onClick={() =>
                   window.open(
-                    'https://github.com/william13murphy/employee-tracking-system ',
+                    'https://github.com/william13murphy/vue-weather ',
                     '_blank'
                   )
                 }
               >
                 GitHub
+              </Button>
+              <Button
+                colored
+                onClick={() =>
+                  window.open('https://bm-vue-weather.netlify.com/#/', '_blank')
+                }
+              >
+                Live Demo
               </Button>
             </CardActions>
           </Card>
@@ -91,7 +101,7 @@ class Projects extends Component {
             <CardTitle
               style={{
                 color: '#fff',
-                height: '176px',
+                height: '175px',
                 background: `url(${AngLogo}) no-repeat center/cover`,
               }}
             >
@@ -110,6 +120,14 @@ class Projects extends Component {
               >
                 GitHub
               </Button>
+              <Button
+                colored
+                onClick={() =>
+                  window.open('https://bm-vue-weather.netlify.com/#/', '_blank')
+                }
+              >
+                Live Demo
+              </Button>
             </CardActions>
             {/* <CardMenu style={{ color: '#fff' }}>
               <IconButton name="share" />
@@ -120,21 +138,20 @@ class Projects extends Component {
             <CardTitle
               style={{
                 height: '175px',
-                background: `url(${WeatherLogo}) no-repeat left`,
+                background: `url(${EmpLogo}) no-repeat center`,
               }}
             >
-              Weather App
+              Employee Tracking System
             </CardTitle>
             <CardText>
-              Weather App built with Vue which allows users to input location of
-              choice.
+              Internal HR App to help manage employees status, PTO, etc.
             </CardText>
             <CardActions>
               <Button
                 colored
                 onClick={() =>
                   window.open(
-                    'https://github.com/william13murphy/vue-weather ',
+                    'https://github.com/william13murphy/employee-tracking-system ',
                     '_blank'
                   )
                 }
