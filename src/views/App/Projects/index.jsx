@@ -16,6 +16,7 @@ import './styles.scss';
 import TAPLogo from '../../../assets/images/TAP_Color.svg';
 import EmpLogo from '../../../assets/images/employees.png';
 import AngLogo from '../../../assets/images/angular.png';
+import WeatherLogo from '../../../assets/images/weather.png';
 
 class Projects extends Component {
   state = {
@@ -57,9 +58,6 @@ class Projects extends Component {
                 Live Demo
               </Button>
             </CardActions>
-            <CardMenu style={{ color: '#fff' }}>
-              <IconButton name="share" />
-            </CardMenu>
           </Card>
 
           <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
@@ -71,7 +69,9 @@ class Projects extends Component {
             >
               Employee Tracking System
             </CardTitle>
-            <CardText>Internal HR App to help manage employees</CardText>
+            <CardText>
+              Internal HR App to help manage employees status, PTO, etc.
+            </CardText>
             <CardActions>
               <Button
                 colored
@@ -85,9 +85,6 @@ class Projects extends Component {
                 GitHub
               </Button>
             </CardActions>
-            <CardMenu style={{ color: '#fff' }}>
-              <IconButton name="share" />
-            </CardMenu>
           </Card>
 
           <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
@@ -98,9 +95,9 @@ class Projects extends Component {
                 background: `url(${AngLogo}) no-repeat center/cover`,
               }}
             >
-              Angular Todo App
+              Todo App
             </CardTitle>
-            <CardText>Experimenting with Angular 7</CardText>
+            <CardText>A functional Todo app using Anuglar7</CardText>
             <CardActions>
               <Button
                 colored
@@ -114,9 +111,37 @@ class Projects extends Component {
                 GitHub
               </Button>
             </CardActions>
-            <CardMenu style={{ color: '#fff' }}>
+            {/* <CardMenu style={{ color: '#fff' }}>
               <IconButton name="share" />
-            </CardMenu>
+            </CardMenu> */}
+          </Card>
+
+          <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+            <CardTitle
+              style={{
+                height: '175px',
+                background: `url(${WeatherLogo}) no-repeat left`,
+              }}
+            >
+              Weather App
+            </CardTitle>
+            <CardText>
+              Weather App built with Vue which allows users to input location of
+              choice.
+            </CardText>
+            <CardActions>
+              <Button
+                colored
+                onClick={() =>
+                  window.open(
+                    'https://github.com/william13murphy/vue-weather ',
+                    '_blank'
+                  )
+                }
+              >
+                GitHub
+              </Button>
+            </CardActions>
           </Card>
         </div>
       );
